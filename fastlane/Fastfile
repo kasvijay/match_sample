@@ -1,0 +1,27 @@
+default_platform(:ios)
+
+platform :ios do
+
+  lane :register_app do
+    produce(
+        username:"kas.vijay@yahoo.com", 
+        app_identifier: "com.kasvijay.chew", 
+        app_name: "MyChew",
+        team_name:"Kulandaisamy Arockia Sagaya Vijay",
+        itc_team_name:"Kulandaisamy Arockia Sagaya Vijay"
+      )
+  end
+
+lane :get_dev_certs do
+  cert development: true
+  sigh development: true
+end
+
+lane :make_me_a_match do
+  match(
+    type: "development",
+    force_for_new_devices: true
+  )
+end
+
+end
