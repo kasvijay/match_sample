@@ -1,2 +1,3 @@
-# certificates
-Stores my Apple certificates and profiles
+# Fastlane Match Sample Repo
+
+This project contains sample code for the fastlane match command.
